@@ -25,7 +25,7 @@ Bring UnbelievaBoat-style fun to your server with premium visuals, powerful admi
    - `/toggle-command command:rob enabled:true`
 4. **Preview settings** anytime with `/view-settings`.
 
-> Need a step-by-step walkthrough? See [`docs/bot-guide.md`](docs/bot-guide.md) for a complete admin and player guide.
+> Need a step-by-step walkthrough? See [`guide.md`](guide.md) for a complete admin and player guide.
 
 ---
 
@@ -66,9 +66,7 @@ CasinoCore supports both **Server Premium** and **User Premium** tiers.
 ## 🤝 Support & Community
 - **Support Server:** Join the official Discord from `/help` or `/premium-info` for announcements and live assistance.
 - **Documentation:**
-  - [`docs/bot-guide.md`](docs/bot-guide.md) – full setup and gameplay guide.
-  - [`docs/CommandReference.md`](docs/CommandReference.md) – exhaustive command list.
-  - [`docs/topgg-description.md`](docs/topgg-description.md) – ready-made Top.gg listing copy.
+  - [`guide.md`](guide.md) – full setup and gameplay guide.
 - **Status & Logs:** Watch the audit channel plus console output for actionable warnings (e.g., backup conflicts).
 
 ---
