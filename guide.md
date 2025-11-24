@@ -56,7 +56,13 @@ All configuration is handled with slash commands. You can always revisit the sys
 - `/economy-analytics` (premium) shows economy snapshots.
 - Configure an audit channel via `/money-audit-log channel:#economy-audit` for transaction logs.
 
-### 2.7 Backups
+### 2.7 Court & Police System
+- `/set-judge` — Configure Judge (Tier 1) and Chief Justice (Tier 2) roles with optional daily salaries
+- `/set-lawyer` — Configure Lawyer role, license price, and license duration
+- `/set-police` — Configure Police role with optional daily salary
+- `/legal-info` — View all court system information, roles, and configured salaries
+
+### 2.8 Backups
 - `/backup create` to snapshot the entire economy.
 - `/backup list`, `/backup delete`, `/backup restore` with confirmation buttons.
 - `/backup export` for an off-site copy.
@@ -103,7 +109,27 @@ All configuration is handled with slash commands. You can always revisit the sys
 - `/bank-info`, `/bank-deposit`, `/bank-withdraw` for treasury management.
 - Investment & loan suite: `/investment`, `/loan-system`, `/invest`, `/loan`, `/loan-repay`.
 
-### 3.9 Backups & Restore Workflow
+### 3.9 Court & Police System
+- **Judge/Chief Justice Commands:**
+  - `/fine user:<target> amount:<amount> reason:<reason>` — Issue fines to users (adds to court recovery reserve)
+  - `/release user:<target>` — Release detained users from custody
+  - `/revoke-license user:<target>` — Revoke active lawyer licenses
+- **Police Commands:**
+  - `/detain user:<target> reason:<reason>` — Detain users who have attempted robbery (checks rob logs)
+- **User Commands:**
+  - `/buy-license` — Purchase a lawyer license (requires Lawyer role to be configured)
+  - `/show-license` — Display your lawyer license card (Canvas-generated image with user details)
+  - `/legal-info` — View court system information, roles, salaries, and license details
+- **Daily Salary System:**
+  - Judges, Chief Justices, and Police officers automatically receive daily salary payouts every 24 hours
+  - Salaries are configured per role via `/set-judge` and `/set-police`
+  - All recipients receive DM receipts with payment confirmation
+- **License System:**
+  - Lawyer licenses expire automatically after the configured duration
+  - Licenses can be revoked by judges using `/revoke-license`
+  - License cards are generated with Canvas and include user information
+
+### 3.10 Backups & Restore Workflow
 - Hourly job enforces backup locks.
 - Confirmation buttons (restore/delete) are restricted to command invoker and timeout after 60 seconds.
 - Audit logs record every action.
@@ -116,8 +142,9 @@ All configuration is handled with slash commands. You can always revisit the sys
 | --- | --- |
 | Economy | `/balance`, `/work`, `/crime`, `/collect-income`, `/interest`, `/economy-projection` |
 | Casino | `/slots`, `/roulette`, `/blackjack`, `/russian-roulette`, `/bet` |
+| Court & Police | `/legal-info`, `/buy-license`, `/show-license`, `/fine`, `/release`, `/detain` |
 | Store & Items | `/create-item`, `/edit-item`, `/delete-item`, `/buy-item`, `/inventory` |
-| Admin | `/set-payout`, `/set-fail-rate`, `/set-bet-limit`, `/toggle-command`, `/view-settings` |
+| Admin | `/set-payout`, `/set-fail-rate`, `/set-bet-limit`, `/set-judge`, `/set-police`, `/toggle-command`, `/view-settings` |
 | Premium | `/premium-info`, `/premium-list`, `/economy-analytics`, `/profile-card` |
 | Utilities | `/help`, `/ping`, `/backup`, `/restore`, `/audit-economy` |
 
