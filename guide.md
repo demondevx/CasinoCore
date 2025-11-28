@@ -72,7 +72,8 @@ All configuration is handled with slash commands. You can always revisit the sys
 ## 3. Feature Overview
 
 ### 3.1 Currency & Balances
-- `/balance`, `/deposit`, `/withdraw`, `/transfer`, `/pay`
+- `/balance`, `/bank deposit`, `/bank withdraw`, `/bank statement`, `/bank loan-status`, `/bank freeze-list`
+- `/invest start`, `/invest history`, `/loan request`, `/loan history`, `/loan-repay`
 - Admin tools: `/add-money`, `/remove-money`, `/reset-economy`, `/role-income`
 
 ### 3.2 Casino Games
@@ -107,15 +108,22 @@ All configuration is handled with slash commands. You can always revisit the sys
 ### 3.8 Server Bank & Finance Tools
 - Automatic tax routing to the **State Bank of <ServerName>**.
 - `/bank-info`, `/bank-deposit`, `/bank-withdraw` for treasury management.
-- Investment & loan suite: `/investment`, `/loan-system`, `/invest`, `/loan`, `/loan-repay`.
+- `/bank statement` — Generate personal bank statements with transaction history (last 30 days)
+- `/bank loan-status <user>` — Check loan status for any user
+- `/bank freeze-list` — List all frozen accounts (Judge/Chief Justice only)
+- Investment & loan suite: `/investment`, `/loan-system`, `/invest start`, `/invest history`, `/loan request`, `/loan history`, `/loan-repay`.
 
 ### 3.9 Court & Police System
 - **Judge/Chief Justice Commands:**
-  - `/fine user:<target> amount:<amount> reason:<reason>` — Issue fines to users (adds to court recovery reserve)
+  - `/fine apply user:<target> amount:<amount>` — Issue fines to users (adds to court recovery reserve)
+  - `/fine history user:<target>` — View complete fine history for any user (Judge/Chief Justice/Admin only)
   - `/release user:<target>` — Release detained users from custody
   - `/revoke-license user:<target>` — Revoke active lawyer licenses
+  - `/bank freeze-list` — List all frozen bank accounts
 - **Police Commands:**
-  - `/detain user:<target> reason:<reason>` — Detain users who have attempted robbery (checks rob logs)
+  - `/detain user user:<target>` — Detain users who have attempted robbery (checks rob logs)
+  - `/detain list` — List all currently detained users (Police/Judge/Chief Justice only)
+  - `/detain history user:<target>` — View detain history for any user (Police/Judge/Chief Justice only)
 - **User Commands:**
   - `/buy-license` — Purchase a lawyer license (requires Lawyer role to be configured)
   - `/show-license` — Display your lawyer license card (Canvas-generated image with user details)
@@ -128,6 +136,10 @@ All configuration is handled with slash commands. You can always revisit the sys
   - Lawyer licenses expire automatically after the configured duration
   - Licenses can be revoked by judges using `/revoke-license`
   - License cards are generated with Canvas and include user information
+- **History & Tracking:**
+  - All court actions are logged to a dedicated court logs channel (configurable via `/legal-info legal-setup`)
+  - Fine history tracks all fines issued with amounts, reasons, and timestamps
+  - Detain history records all detentions with amounts recovered and dates
 
 ### 3.10 Backups & Restore Workflow
 - Hourly job enforces backup locks.
@@ -141,8 +153,10 @@ All configuration is handled with slash commands. You can always revisit the sys
 | Category | Highlight Commands |
 | --- | --- |
 | Economy | `/balance`, `/work`, `/crime`, `/collect-income`, `/interest`, `/economy-projection` |
+| Banking | `/bank deposit`, `/bank withdraw`, `/bank statement`, `/bank loan-status`, `/bank freeze-list` |
+| Finance | `/invest start`, `/invest history`, `/loan request`, `/loan history`, `/loan-repay` |
 | Casino | `/slots`, `/roulette`, `/blackjack`, `/russian-roulette`, `/bet` |
-| Court & Police | `/legal-info`, `/buy-license`, `/show-license`, `/fine`, `/release`, `/detain` |
+| Court & Police | `/legal-info`, `/buy-license`, `/show-license`, `/fine apply`, `/fine history`, `/detain user`, `/detain list`, `/detain history` |
 | Store & Items | `/create-item`, `/edit-item`, `/delete-item`, `/buy-item`, `/inventory` |
 | Admin | `/set-payout`, `/set-fail-rate`, `/set-bet-limit`, `/set-judge`, `/set-police`, `/toggle-command`, `/view-settings` |
 | Premium | `/premium-info`, `/premium-list`, `/economy-analytics`, `/profile-card` |
