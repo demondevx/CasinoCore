@@ -70,8 +70,6 @@ CasinoCore supports both **Server Premium** and **User Premium** tiers.
 - **Support Server:** Join the official Discord from `/help` or `/premium-info` for announcements and live assistance.
 - **Documentation:**
   - [`docs/bot-guide.md`](docs/bot-guide.md) – full setup and gameplay guide.
-  - [`docs/CommandReference.md`](docs/CommandReference.md) – exhaustive command list.
-  - [`docs/topgg-description.md`](docs/topgg-description.md) – ready-made Top.gg listing copy.
 - **Status & Logs:** Watch the audit channel plus console output for actionable warnings (e.g., backup conflicts).
 
 ---
