@@ -12,7 +12,6 @@ Bring lightning-fast economy gaming to your server with a massive prefix command
 - **Multiplayer Casino Suite** – Gather friends in chat for Blackjack, Liar's Dice, Russian Roulette, Slots, Coinflip, and Thulla.
 - **Tactical RPG Operations** – Deploy squads of mercenaries, equip legendary boss-drop weapons, and embark on visual hunting missions for loot.
 - **Syndicate & Clan Wars** – Establish your own guild, fund the clan treasury, and initiate matchmaking for global clan wars.
-- **Law & Order System** – Bounties, court cases, police arrests, and lawyer licenses all handled natively.
 
 ---
 
