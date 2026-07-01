@@ -20,7 +20,7 @@ Bring lightning-fast economy gaming to your server with a massive prefix command
 1. **Invite the bot** using the official OAuth link (ask the owner or see `cc help`).
 2. **Run `cc help`** to open the interactive command browser with dropdown navigation.
 3. **Configure essentials**:
-   - Change your server's prefix: `/prefix <new_prefix>`
+   - Change your server's prefix: `cc prefix <new_prefix>`
    - Disable/Enable specific prefix commands: `cc disable <command>` / `cc enable <command>`
 4. **Start your Empire**: Use `cc daily` to get cash, then browse properties with `cc shop`!
 
