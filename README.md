@@ -34,7 +34,7 @@ Bring lightning-fast economy gaming to your server with a massive prefix command
 | Multiplayer Casino | `cc slots`, `cc roulette`, `cc blackjack`, `cc russian`, `cc coinflip`, `cc bluff`, `cc thulla`, `cc liarsdice` |
 | Tactical RPG | `cc squad`, `cc hunt`, `cc arsenal`, `cc contract`, `cc upgrade`, `cc legendaryequip` |
 | Syndicate Clans | `cc clan create`, `cc clan info`, `cc clan deposit`, `cc clanwar start` |
-| Admin Tools | `/prefix`, `cc disable`, `cc enable`, `cc lock` |
+| Admin Tools | `cc prefix`, `cc disable`, `cc enable`, `cc lock` |
 
 ---
 
