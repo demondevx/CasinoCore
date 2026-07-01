@@ -115,9 +115,9 @@ Enjoy building your casino empire! 🎰💸
 
 ### Timed Rewards
 
-**`cc daily`** - Claim daily reward (Available every 24 hours).
-**`cc weekly`** - Claim weekly reward (Available every 7 days).
-**`cc monthly`** - Claim monthly reward (Available every 30 days).
+- **`cc daily`** - Claim daily reward (Available every 24 hours).
+- **`cc weekly`** - Claim weekly reward (Available every 7 days).
+- **`cc monthly`** - Claim monthly reward (Available every 30 days).
 
 ---
 
@@ -125,15 +125,15 @@ Enjoy building your casino empire! 🎰💸
 
 Gather your friends and bet your CoreBits (CBT) on classic multiplayer card games and luck-based events!
 
-**`cc blackjack <bet>`** - Challenge the dealer in a classic game of 21.
-**`cc bluff <bet>`** - Face off in a tense 1v1 battle of deception and card-play.
-**`cc thulla <bet>`** - Join a multiplayer table and try not to get left holding the cards!
-**`cc liarsdice <bet>`** - Roll the dice, bluff your opponents, and spot the lies.
-**`cc russian <bet>`** - A thrilling, multiplayer game of luck where only one survives.
-**`cc slots <bet>`** - Spin the lucky slots machine for instant wins.
-**`cc coinflip <bet>`** - Flip a coin to double your bet or lose it all.
-**`cc lottery`** - View the jackpot status and buy tickets to the global lottery draw.
-**`cc gameguide`** - Need help? Read up on all game rules and strategies.
+- **`cc blackjack <bet>`** - Challenge the dealer in a classic game of 21.
+- **`cc bluff <bet>`** - Face off in a tense 1v1 battle of deception and card-play.
+- **`cc thulla <bet>`** - Join a multiplayer table and try not to get left holding the cards!
+- **`cc liarsdice <bet>`** - Roll the dice, bluff your opponents, and spot the lies.
+- **`cc russian <bet>`** - A thrilling, multiplayer game of luck where only one survives.
+- **`cc slots <bet>`** - Spin the lucky slots machine for instant wins.
+- **`cc coinflip <bet>`** - Flip a coin to double your bet or lose it all.
+- **`cc lottery`** - View the jackpot status and buy tickets to the global lottery draw.
+- **`cc gameguide`** - Need help? Read up on all game rules and strategies.
 
 ---
 
@@ -141,17 +141,17 @@ Gather your friends and bet your CoreBits (CBT) on classic multiplayer card game
 
 Manage your units, gear up, and complete combat missions directly with your prefix commands:
 
-**`cc arsenal`** - View and equip your weapons, gear, and heavy armor.
-**`cc squad`** - Check the status and visual lineup of your mercenaries.
-**`cc contract`** - Recruit elite mercenaries to build your fighting force.
-**`cc hunt`** - Deploy your squad on visual hunting missions for loot.
-**`cc clash @user`** - Initiate a PvP duel with another player.
-**`cc upgrade` & `cc refine`** - Refine your weapons and equipment to boost stats.
-**`cc legendaryequip`** - Show off rare legendary boss drops.
+- **`cc arsenal`** - View and equip your weapons, gear, and heavy armor.
+- **`cc squad`** - Check the status and visual lineup of your mercenaries.
+- **`cc contract`** - Recruit elite mercenaries to build your fighting force.
+- **`cc hunt`** - Deploy your squad on visual hunting missions for loot.
+- **`cc clash @user`** - Initiate a PvP duel with another player.
+- **`cc upgrade` & `cc refine`** - Refine your weapons and equipment to boost stats.
+- **`cc legendaryequip`** - Show off rare legendary boss drops.
 
-**`cc clan create <name>`** - Establish your own guild syndicate.
-**`cc clan info` / `cc clan deposit`** - Track syndicate progress and fund the war chest.
-**`cc clanwar start`** - Initiate matchmaking for global clan wars.
+- **`cc clan create <name>`** - Establish your own guild syndicate.
+- **`cc clan info` / `cc clan deposit`** - Track syndicate progress and fund the war chest.
+- **`cc clanwar start`** - Initiate matchmaking for global clan wars.
 
 ---
 
@@ -159,11 +159,11 @@ Manage your units, gear up, and complete combat missions directly with your pref
 
 *(Note: The Estate system uses modern Slash Commands to properly render complex UI canvases and menus)*
 
-**`/estate view`** - View any property on the global market.
-**`/estate buy`** - Purchase a luxury property (from Suburban Homes to Casino Resorts).
-**`/estate status`** - Check on your owned properties, view passive income generation, and monitor maintenance fees.
-**`/estate upgrade`** - Visually construct upgrades on your property canvas (e.g., Security Fences, Helipads).
-**`/estate partner`** - Form a 50/50 business partnership with another user to split property costs and payouts.
+- **`/estate view`** - View any property on the global market.
+- **`/estate buy`** - Purchase a luxury property (from Suburban Homes to Casino Resorts).
+- **`/estate status`** - Check on your owned properties, view passive income generation, and monitor maintenance fees.
+- **`/estate upgrade`** - Visually construct upgrades on your property canvas (e.g., Security Fences, Helipads).
+- **`/estate partner`** - Form a 50/50 business partnership with another user to split property costs and payouts.
 
 ⚠️ **WARNING:** All estates require a weekly maintenance fee billed every Sunday. Failure to pay will result in property demolition!
 
@@ -173,9 +173,9 @@ Manage your units, gear up, and complete combat missions directly with your pref
 
 *These commands require Administrator or Manage Server permissions*
 
-**`/prefix <new_prefix>`** - Change the bot's prefix for your server (default is `cc`).
-**`cc disable <command>`** - Lock a specific prefix command in the current channel.
-**`cc enable <command>`** - Unlock a previously disabled command.
+- **`/prefix <new_prefix>`** - Change the bot's prefix for your server (default is `cc`).
+- **`cc disable <command>`** - Lock a specific prefix command in the current channel.
+- **`cc enable <command>`** - Unlock a previously disabled command.
 
 ---
 
